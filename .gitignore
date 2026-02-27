@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+
+# runtime artifacts
+logs/
+runtime.log
+runtime.err.log
+
+# local secrets/config
+config.json
+.env
+
+# local tooling
+.venv/

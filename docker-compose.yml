@@ -1,0 +1,30 @@
+services:
+  chatgpt_pool:
+    build: .
+    container_name: chatgpt_pool_panel
+    restart: unless-stopped
+    ports:
+      - "${PANEL_PORT:-8099}:8099"
+    environment:
+      TZ: Asia/Shanghai
+    command:
+      - python
+      - admin_panel.py
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8099"
+      - --password
+      - "${PANEL_PASSWORD:-admin123}"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./config.json:/app/config.json
+      - ./logs:/app/logs
+    networks:
+      - chatgpt_pool_net
+
+networks:
+  chatgpt_pool_net:
+    external: true
+    name: chatgpt_pool_net

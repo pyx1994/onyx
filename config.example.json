@@ -1,0 +1,47 @@
+{
+  "clean": {
+    "base_url": "http://your-cpa-api:8317",
+    "token": "your-cpa-token",
+    "target_type": "codex",
+    "workers": 20,
+    "delete_workers": 20,
+    "timeout": 10,
+    "retries": 1,
+    "min_weekly_remaining_percent": 10.0
+  },
+  "email": {
+    "provider": "duckmail",
+    "worker_domain": "example.mail.domain",
+    "email_domains": [
+      "example1.com",
+      "example2.com"
+    ],
+    "admin_password": "your-mail-admin-password",
+    "duckmail_bearer": "your-duckmail-api-key"
+  },
+  "duckmail_api_base": "https://api.duckmail.sbs",
+  "duckmail_bearer": "your-duckmail-api-key",
+  "maintainer": {
+    "min_candidates": 800
+  },
+  "run": {
+    "workers": 5,
+    "proxy": ""
+  },
+  "oauth": {
+    "issuer": "https://auth.openai.com",
+    "client_id": "app_EMoamEEZ73f0CkXaXp7hrann",
+    "redirect_uri": "http://localhost:1455/auth/callback",
+    "retry_attempts": 3,
+    "retry_backoff_base": 2.0,
+    "retry_backoff_max": 15.0
+  },
+  "output": {
+    "accounts_file": "accounts.txt",
+    "csv_file": "registered_accounts.csv",
+    "ak_file": "ak.txt",
+    "rk_file": "rk.txt",
+    "save_local": false
+  },
+  "panel_password": "admin123"
+}
