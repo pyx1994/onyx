@@ -142,7 +142,7 @@ LOGIN_HTML = """<!doctype html>
     <div class="meta-line">
       作者: 暮光下的少年 |
       GitHub:
-      <a href="https://github.com/pyx1994" target="_blank" rel="noopener noreferrer">https://github.com/pyx1994</a>
+      <a href="https://github.com/pyx1994/onyx" target="_blank" rel="noopener noreferrer">https://github.com/pyx1994/onyx</a>
     </div>
     <label for="pwd">登录密码</label>
     <input id="pwd" type="password" autocomplete="current-password" />
@@ -553,7 +553,7 @@ INDEX_HTML = """<!doctype html>
       <div class="meta-line">
         作者: 暮光下的少年 |
         GitHub:
-        <a href="https://github.com/pyx1994" target="_blank" rel="noopener noreferrer">https://github.com/pyx1994</a>
+        <a href="https://github.com/pyx1994/onyx" target="_blank" rel="noopener noreferrer">https://github.com/pyx1994/onyx</a>
       </div>
     </section>
 
@@ -1798,6 +1798,7 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
 
 
 
