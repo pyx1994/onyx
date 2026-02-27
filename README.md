@@ -1,7 +1,8 @@
 # Chatgpt 号池控制台
 
 作者: 暮光下的少年  
-GitHub: https://github.com/pyx1994
+
+感觉不错Star一下
 
 一个用于账号池自动维护的控制台，支持：
 - 面板登录与运行状态监控
